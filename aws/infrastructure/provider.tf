@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
     bucket = "tf-state-sandbox-nerdery"
-    key = "terraform-infrastructure/state"
+    key = "terraform-test/state"
+    #Note: The backend region cannot be specified via a variable, for whatever reason.
     region = "us-east-1"
   }
 }
